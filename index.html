@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>IDG1011 Assignment 1 – Lisa Mari Myrene</title>
+</head>
+<body>
+    <section class="sectionHeader">
+        <h1>Flowers</h1>
+        <div id="line1"></div>
+        <div id="line2"></div>
+        <img src="assets/header-illustrator.svg" alt="header-picture">
+        
+    </section>
+    <section class="sectionGenerator">
+        <h2>Bouquet Generator</h2>
+        <div class="generatorLeft">
+            <p>Do you have trouble choosing flowers for your bouquet?</p>
+            <p>Use this generator that will make the perfect bouquet for you!</p>
+        </div>
+        <div class="generatorRight">
+            <h3>Bouquet list:</h3>
+            <ul>
+                <li id="li1"></li>
+                <li id="li2"></li>
+                <li id="li3"></li>
+                <li id="li4"></li>
+            </ul>
+        </div>
+        <button class="generateBtn" id="generateBtn">Generate</button>
+    </section>
+    <section class="sectionQuiz">
+        <h2>Flower Quiz</h2>
+        <p>Can you name the flowers?</p>
+        <div class="quizCenter">
+            <div class="rose flower">
+                <img src="assets/rose.svg" id="roseImg" alt="rose-picture">
+                <input type="text" id="input1">
+                <button id="roseBtn" class="answerBtn">Answer</button>
+                <p id="textRose"></p>
+            </div>
+            <div class="sunflower flower">
+                <img src="assets/sunflower.svg" id="sunflowerImg" alt="sunflower-picture">
+                <input type="text" id="input2">
+                <button id="sunflowerBtn" class="answerBtn">Answer</button>
+                <p id="textSunflower"></p>
+            </div>
+            <div class="tulip flower">
+                <img src="assets/tulip.png" alt="tulip-picture">
+                <input type="text" id="input3">
+                <button id="tulipBtn" class="answerBtn">Answer</button>
+                <p id="textTulip"></p>
+            </div>
+        </div>
+        <button id="startoverBtn" class="startoverBtn">Start over</button>
+    </section>
+    <footer>
+        <p>This website has been developed in association with the subject IDG1011 Front-End, within BWU - NTNU Gjøvik.</p>
+        <h3>Lisa Mari Myrene</h3>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

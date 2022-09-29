@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@400;700&display=swap');
+
+$playfair-display: 'Playfair Display', serif;
+$raleway: 'Raleway', sans-serif;
+$background: #F8EAD6;
+$background2: #FFF8ED;
+$font-color: #5F5F5F;
+$absent-color: #FCC2A8;
+$button2: #FFD99F;
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: $background;
+    font-family: $raleway;  
+    color: $font-color;
+    width: 100%;
+}
+h2 {
+    font-family: $playfair-display;
+    color: $font-color;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+button {
+    font-family: $raleway;
+    color: $font-color;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 13px;
+
+    &:hover {
+        background-color: whitesmoke;
+        cursor: pointer;
+    }
+}
+.generateBtn, .answerBtn {
+    background-color: $absent-color;
+}
+.startoverBtn {
+    background-color: $button2;
+}
+input {
+    border: solid 0.1px $font-color;
+    height: 25px;
+}
+#line1, #line2 {
+    background-color: $font-color;
+    border-radius: 100%;
+}
+.sectionHeader {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "h1 line1 line1"
+    "line2 img img"
+    "line2 img img";
+
+    h1 {
+        font-family: $raleway;
+        text-transform: uppercase;
+        grid-area: h1;
+        color: $font-color;
+        margin-left: 35px;
+        margin-top: 30px;
+    }
+    img {
+       width: 160%;
+       grid-area: img;
+       opacity: 80%;
+       margin-left: -515px;
+       margin-top: -180px;
+       display: inline;
+    }
+    #line1 {
+        grid-area: line1;
+        height: 1px;
+        width: 135%;
+        margin-left: -380px;
+        margin-top: 35px;
+    }
+    #line2 {
+        grid-area: line2;
+        height: 85%;
+        width: 1px;
+        margin-left: 37px;
+    }
+}
+.sectionGenerator {
+    background-color: $background2;
+    padding: 80px 0;
+    display: grid;
+    grid-template-areas: 
+    "generatorLeft generatorRight";
+
+    h2 {
+        font-size: 30px;
+        margin-top: -485px;
+        padding-left: 35px;
+    }
+    .generateBtn {
+        width: 90px;
+        margin-left: 105px;
+        text-align: center;
+    }
+    .generatorLeft {
+        grid-area: generatorLeft;
+        justify-content: center;
+        margin-top: 50px;
+    
+        
+        p {
+            font-size: 20px;
+            margin: 0 auto;
+            text-align: center;
+            max-width: 270px;
+            margin-bottom: 50px;
+            line-height: 30px;
+        }
+    }
+    .generatorRight {
+        width: 300px;
+        grid-area: generatorRight;
+        text-align: center;
+
+        h3 {
+            margin-top: 10px;
+            font-family: $playfair-display;
+            color: $font-color;
+            letter-spacing: 0.5px;
+        }
+        ul {
+            margin: 70px 0 0 -50px;
+            list-style: none;
+            text-align: center;
+        
+            li {
+                padding-bottom: 20px;
+            }
+        }
+    } 
+}
+.sectionQuiz {
+    padding: 60px 0 100px 0;
+
+    h2 {
+        font-size: 30px;
+        padding-left: 35px;
+        margin-top: -30px;
+    }
+    p {
+        text-align: center;
+        margin-top: 60px;
+        font-size: 20px;
+    }
+    .startoverBtn {
+        display: block;
+        margin: 0 auto;
+        margin-top: 80px;
+        width: 95px;
+    }
+    .quizCenter {
+        margin-top: 100px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 25% 25% 25%;
+        grid-template-areas: 
+        "rose sunflower tulip";
+        
+        .rose {
+            grid-area: rose;
+        }
+        .sunflower {
+            grid-area: sunflower;
+        }
+        .tulip {
+            grid-area: tulip;
+        }
+        .flower {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        p {
+          font-size: 15px; 
+          margin-top: 30px; 
+        }
+        img {
+            width: 140px;
+            height: 140px;
+
+            margin: 0 auto;
+        }
+        input {
+            margin-top: 50px;
+            width: 200px;
+            border-radius: 5px;
+        }
+        .answerBtn {
+           margin: 20px auto 0 auto;
+           width: 90px;
+        }
+    }
+}
+footer {
+    background-color: $absent-color;
+    height: 190px;
+    text-align: center;
+
+    p {
+        margin: 0 auto;
+        padding-top: 40px;
+        width: 500px;
+        line-height: 25px;
+    }
+    h3 {
+        font-weight: 500;
+        padding: 20px 0 10px 0;
+    }
+}
